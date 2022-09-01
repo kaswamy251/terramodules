@@ -74,3 +74,11 @@ depends_on = [
 ]
 }
 
+resource "azurerm_storage_account" "str" {
+  name                     = var.azurerm_storage_account-name
+  resource_group_name      = var.azurerm_resource_group-name
+  location                 = var.location
+  account_tier             = var.account_tier
+  account_replication_type = var.account_replication_type
+
+}

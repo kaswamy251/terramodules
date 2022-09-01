@@ -96,7 +96,23 @@ variable "destination_address_prefix" {
   
 }
 
+variable "azurerm_storage_account-name" {
 
+  type = string
+  
+}
+
+variable "account_tier" {
+
+  type = string
+  
+}
+
+variable "account_replication_type" {
+
+  type = string
+  
+}
 
 
 
