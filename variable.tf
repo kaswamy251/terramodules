@@ -96,25 +96,13 @@ variable "destination_address_prefix" {
   
 }
 
-variable "azurerm_network_interface-name" {
+variable "nic-name" {
 
-  type= string
-  
-}
-
-variable "ip-name" {
-
-  type=string
+  type = string
   
 }
 
 variable "subnet_id" {
-
-  type=string
-  
-}
-
-variable "private_ip_address_allocation-d" {
 
   type = string
   
