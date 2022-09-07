@@ -73,14 +73,14 @@ depends_on = [
   azurerm_resource_group.dev
 ]
 }
+resource "azurerm_network_interface" "nic" {
+  name                = var.azurerm_network_interface-name
+  location            = var.location
+  resource_group_name = var.azurerm_resource_group-name
 
-resource "azurerm_storage_account" "str" {
-  name                     = var.azurerm_storage_account-name
-  resource_group_name      = var.azurerm_resource_group-name
-  location                 = var.location
-  account_tier             = var.account_tier
-  account_replication_type = var.account_replication_type
-depends_on = [
-  azurerm_resource_group.dev
-]
+  ip_configuration {
+    name                          = var.ip-name
+    subnet_id                     = var.subnet_id
+    private_ip_address_allocation = var.private_ip_address_allocation-d
+  }
 }

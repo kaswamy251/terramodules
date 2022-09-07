@@ -96,19 +96,25 @@ variable "destination_address_prefix" {
   
 }
 
-variable "azurerm_storage_account-name" {
+variable "azurerm_network_interface-name" {
 
-  type = string
+  type= string
   
 }
 
-variable "account_tier" {
+variable "ip-name" {
 
-  type = string
+  type=string
   
 }
 
-variable "account_replication_type" {
+variable "subnet_id" {
+
+  type=string
+  
+}
+
+variable "private_ip_address_allocation-d" {
 
   type = string
   
